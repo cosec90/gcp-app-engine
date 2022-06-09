@@ -53,8 +53,8 @@ app.get('/test2', async (req, res) => {
         console.log('Test2 res',response.data)
         resObj = response.data
     }).catch((err) =>{
-        console.log('Test2 err',err.data)
-        resObj = err.data
+        console.log('Test2 err',err.response.data)
+        resObj = err.response.data
     })
 
     res.status(200).json(resObj)
@@ -72,8 +72,8 @@ app.get('/test3', async (req, res) => {
         console.log('Sign res',response.data)
         resObj = response.data
     }).catch((err) =>{
-        console.log('Test3',err)
-        resObj = err.data
+        console.log('Test3',err.response.data)
+        resObj = err.response.data
     })
     
     res.status(200).json(resObj)
