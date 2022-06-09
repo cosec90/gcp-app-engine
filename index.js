@@ -48,7 +48,7 @@ app.get('/test2', async (req, res) => {
     // Imports the Google Cloud client library.
     // listAllInstances()
     let resObj = {}
-    await axios.get('http://fancodedeploy.skandha.in:7000/test',axiosConfig).then((res) =>{
+    await axios.get('http://34.93.250.5:7000/test',axiosConfig).then((res) =>{
 
         console.log('Test2 res',res)
         resObj = res
@@ -67,7 +67,7 @@ app.get('/test3', async (req, res) => {
         username: "operator1",
         password: "operator1@1234"
     }
-    axios.post('http://fancodedeploy.skandha.in:7000/test',reqBody,axiosConfig).then((res) =>{
+    axios.post('http://34.93.250.5:7000/signIn',reqBody,axiosConfig).then((res) =>{
 
         console.log('Sign res',res)
         resObj = res
