@@ -64,7 +64,7 @@ app.get('/test3', async (req, res) => {
     
     let resObj = {}
     let reqBody = {
-        username: "operator1",
+        username: "operator123",
         password: "operator1@1234"
     }
     await axios.post('http://34.93.250.5:7000/api/user/signIn',reqBody,axiosConfig).then((response) =>{
