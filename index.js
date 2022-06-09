@@ -11,6 +11,13 @@ port = parseInt(process.env.PORT) || 6000
 const { Storage } = require('@google-cloud/storage');
 const {ImagesClient} = require('@google-cloud/compute').v1
 
+const axios = require('axios').default
+let axiosConfig = {
+    headers: {
+        'Content-Type': 'application/json',
+        'token': ''
+    }
+}
 
 // -----------------------
 
@@ -32,35 +39,43 @@ app.listen(port, () => {
 app.get('/', (req, res) => {
 
     res.status(200).json({ message: "Initial route" })
+    
 
 })
 
-app.get('/test2', (req, res) => {
+app.get('/test2', async (req, res) => {
 
     // Imports the Google Cloud client library.
     // listAllInstances()
+    let resObj = {}
+    await axios.get('http://fancodedeploy.skandha.in:7000/test',axiosConfig).then((res) =>{
 
-    res.status(200).json({message: "Test route 2"})
+        console.log('Test2 res',res)
+        resObj = res
+    }).catch((err) =>{
+        console.log('Test2 err',err)
+        resObj = err
+    })
+
+    res.status(200).json(resObj)
 
 })
-app.get('/test3', (req, res) => {
-    // const storage = new Storage();
-    // // Makes an authenticated API request.
-    // async function listBuckets() {
-    //     try {
-    //         const results = await storage.getBuckets();
+app.get('/test3', async (req, res) => {
+    
+    let resObj = {}
+    let reqBody = {
+        username: "operator1",
+        password: "operator1@1234"
+    }
+    axios.post('http://fancodedeploy.skandha.in:7000/test',reqBody,axiosConfig).then((res) =>{
 
-    //         const [buckets] = results;
+        console.log('Sign res',res)
+        resObj = res
+    }).catch((err) =>{
+        console.log('Test3',err)
+        resObj = err
+    })
 
-    //         console.log('Buckets:');
-    //         buckets.forEach(bucket => {
-    //             console.log(bucket.name);
-    //         });
-    //     } catch (err) {
-    //         console.error('ERROR:', err);
-    //     }
-    // }
-    // listBuckets();
-    res.status(200).send('Hello world 2')
+    res.status(200).json(resObj)
 
 })
