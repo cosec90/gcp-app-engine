@@ -6,7 +6,7 @@ const dotenv = require('dotenv').config();
 var https = require('https');
 var cors = require('cors')
 const app = express()
-port = 6000
+port = parseInt(process.env.PORT) || 6000
 
 const { Storage } = require('@google-cloud/storage');
 const {ImagesClient} = require('@google-cloud/compute').v1
