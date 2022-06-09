@@ -48,13 +48,13 @@ app.get('/test2', async (req, res) => {
     // Imports the Google Cloud client library.
     // listAllInstances()
     let resObj = {}
-    await axios.get('http://34.93.250.5:7000/test',axiosConfig).then((res) =>{
+    await axios.get('http://34.93.250.5:7000/test',axiosConfig).then((response) =>{
 
-        console.log('Test2 res',res)
-        resObj = res
+        console.log('Test2 res',response.data)
+        resObj = response.data
     }).catch((err) =>{
-        console.log('Test2 err',err)
-        resObj = err
+        console.log('Test2 err',err.data)
+        resObj = err.data
     })
 
     res.status(200).json(resObj)
@@ -67,15 +67,15 @@ app.get('/test3', async (req, res) => {
         username: "operator1",
         password: "operator1@1234"
     }
-    axios.post('http://34.93.250.5:7000/signIn',reqBody,axiosConfig).then((res) =>{
+    await axios.post('http://34.93.250.5:7000/api/user/signIn',reqBody,axiosConfig).then((response) =>{
 
-        console.log('Sign res',res)
-        resObj = res
+        console.log('Sign res',response.data)
+        resObj = response.data
     }).catch((err) =>{
         console.log('Test3',err)
-        resObj = err
+        resObj = err.data
     })
-
+    
     res.status(200).json(resObj)
 
 })
