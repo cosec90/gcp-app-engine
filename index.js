@@ -61,6 +61,6 @@ app.get('/test3', (req, res) => {
     //     }
     // }
     // listBuckets();
-    res.status(200).json({message: "Test route 3"})
+    res.status(200).send('Hello world 2')
 
 })
