@@ -10,6 +10,8 @@ port = parseInt(process.env.PORT) || 6000
 
 const { Storage } = require('@google-cloud/storage');
 const {ImagesClient} = require('@google-cloud/compute').v1
+var FormData = require('form-data');
+var fs = require('fs');
 
 const axios = require('axios').default
 let axiosConfig = {
@@ -23,14 +25,42 @@ let axiosConfig = {
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
-app.use(bodyParser({ limit: '50mb' }))
-app.use(express.json({ limit: '50mb' }));
+app.use(express.json({limit: '50mb'}));
+app.use(express.urlencoded({limit: '50mb'}));
 
 // -----------------------
 
 // -----------------------
 
 // -----------------------
+
+var multer = require('multer');
+var upload = multer();
+var type = upload.single('service_json_file');
+
+// const multer = require('multer');
+// const storageTest = multer.diskStorage({
+//     destination: function (req, file, cb) {
+//         cb(null, './uploads')
+//     },
+//     filename: function (req, file, cb) {
+//         const uniqueSuffix = new Date().getTime()
+//         const splitFileName = file.originalname.split(".")
+//         // cb(null, file.fieldname + '-' + uniqueSuffix)
+//         // cb(null, file.originalname)
+//         console.log("File name in multer", splitFileName[0] + '-' + uniqueSuffix + '.' + splitFileName[1])
+//         cb(null, splitFileName[0] + '-' + uniqueSuffix + '.' + splitFileName[1])
+//     }
+// })
+
+// const upload = multer(
+//     {
+//         storage: storageTest,
+//         fileFilter: function(_req, file, cb){
+//             checkFileType(file, cb);
+//         }
+//     }
+// )
 
 app.listen(port, () => {
     console.log(`App is running on port ${port}`)
@@ -53,7 +83,7 @@ app.get('/getNetworks', async (req, res) => {
     resObj = {}
     // console.log('Request headers ----------',req.headers)
     // console.log("x-api key",header["x-api-key"])
-    axiosConfig.headers.token = token
+    axiosConfig.headers.token = req.headers.token
     await axios.get(`${baseUrl}/api/utilities/getNetworks?region=${req.query.region}`,axiosConfig).then((response) =>{
         
         resObj = response.data
@@ -69,10 +99,10 @@ app.get('/getNetworks', async (req, res) => {
 
 // GET SUBNETWORKS --------------------------------------
 
-app.get('/getNetworks', async (req, res) => {
+app.get('/getSubnetworks', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
+    axiosConfig.headers.token = req.headers.token
     await axios.get(`${baseUrl}/api/utilities/getSubnetworks?region=${req.query.region}`,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
@@ -90,7 +120,7 @@ app.get('/getNetworks', async (req, res) => {
 app.get('/getRegions', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
+    axiosConfig.headers.token = req.headers.token
     await axios.get(`${baseUrl}/api/utilities/getRegions`,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
@@ -106,7 +136,8 @@ app.get('/getRegions', async (req, res) => {
 app.post('/createInstance', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
+    axiosConfig.headers.token = req.headers.token
+    console.log('')
     await axios.post(`${baseUrl}/api/encoder/createInstance`,req.body,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
@@ -121,7 +152,7 @@ app.post('/createInstance', async (req, res) => {
 app.get('/getInstances', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
+    axiosConfig.headers.token = req.headers.token
     await axios.get(`${baseUrl}/api/encoder/getInstances?zone=${req.query.zone}`,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
@@ -136,8 +167,8 @@ app.get('/getInstances', async (req, res) => {
 app.post('/startInstance', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
-    await axios.get(`${baseUrl}/api/encoder/startInstance`,req.body,axiosConfig).then((response) =>{
+    axiosConfig.headers.token = req.headers.token
+    await axios.post(`${baseUrl}/api/encoder/startInstance`,req.body,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
         resObj = err.response.data
@@ -152,8 +183,8 @@ app.post('/startInstance', async (req, res) => {
 app.post('/stopInstance', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
-    await axios.get(`${baseUrl}/api/encoder/stopInstance`,req.body,axiosConfig).then((response) =>{
+    axiosConfig.headers.token = req.headers.token
+    await axios.post(`${baseUrl}/api/encoder/stopInstance`,req.body,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
         resObj = err.response.data
@@ -167,8 +198,8 @@ app.post('/stopInstance', async (req, res) => {
 app.post('/createUser', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
-    await axios.get(`${baseUrl}/api/user/createUser`,req.body,axiosConfig).then((response) =>{
+    axiosConfig.headers.token = req.headers.token
+    await axios.post(`${baseUrl}/api/user/createUser`,req.body,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
         resObj = err.response.data
@@ -182,9 +213,11 @@ app.post('/createUser', async (req, res) => {
 app.post('/signIn', async (req, res) => {
 
     resObj = {}
-    await axios.get(`${baseUrl}/api/user/signIn`,req.body,axiosConfig).then((response) =>{
+    await axios.post(`${baseUrl}/api/user/signIn`,req.body,axiosConfig).then((response) =>{
         resObj = response.data
+        console.log('Response login',response)
     }).catch((err) =>{
+        console.log('Error',err)
         resObj = err.response.data
     })
     res.status(resObj.status).json(resObj)
@@ -193,16 +226,32 @@ app.post('/signIn', async (req, res) => {
 
 // SERVICE CREATION IN ATEME ENCODER --------------------------------------
 
-app.post('/createAtemeService', async (req, res) => {
+app.post('/createAtemeService',upload.single('service_json_file'),async (req, res) => {
 
-    resObj = {}
-    await axios.get(`${baseUrl}/api/ateme/createAtemeService?atemeIP=${req.query.atemeIP}`,req.body,axiosConfig).then((response) =>{
+    console.log("req.file.path",req.file.path);
+    var data = new FormData();
+    // data.append('service_json_file', fs.createReadStream(req.file.path));
+    data.append('service_json_file', req.file.buffer,req.file.originalname);
+    var config = {
+        method: 'post',
+        url: `${baseUrl}/api/ateme/createAtemeService?atemeIP=${req.query.atemeIP}`,
+        headers: { 
+            'token': req.headers.token, 
+            ...data.getHeaders()
+        },
+        data : data
+    };
+
+    await axios(config)
+    .then(function (response) {
+        console.log(JSON.stringify(response.data));
         resObj = response.data
-    }).catch((err) =>{
-        resObj = err.response.data
     })
+    .catch(function (error) {
+        console.log(error);
+        resObj = err.response.data
+    });
     res.status(resObj.status).json(resObj)
-   
 })
 
 // GET ALL SERVICES --------------------------------------
@@ -210,7 +259,7 @@ app.post('/createAtemeService', async (req, res) => {
 app.get('/getAtemeServices', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
+    axiosConfig.headers.token = req.headers.token
     await axios.get(`${baseUrl}/api/ateme/getAtemeServices?atemeIP=${req.query.atemeIP}&name=${req.query.name}`,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
@@ -225,7 +274,7 @@ app.get('/getAtemeServices', async (req, res) => {
 app.post('/startAtemeService', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
+    axiosConfig.headers.token = req.headers.token
     await axios.post(`${baseUrl}/api/ateme/startAtemeService`,req.body,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
@@ -240,7 +289,7 @@ app.post('/startAtemeService', async (req, res) => {
 app.post('/stopAtemeService', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
+    axiosConfig.headers.token = req.headers.token
     await axios.post(`${baseUrl}/api/ateme/stopAtemeService`,req.body,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
@@ -254,13 +303,39 @@ app.post('/stopAtemeService', async (req, res) => {
 
 app.put('/editAtemeService', async (req, res) => {
 
-    resObj = {}
-    axiosConfig.headers.token = token
-    await axios.put(`${baseUrl}/api/ateme/editAtemeService?atemeIP=${req.query.atemeIP}&uid=${req.query.uid}`,req.body,axiosConfig).then((response) =>{
+    // resObj = {}
+    // axiosConfig.headers.token = req.headers.token
+    // await axios.put(`${baseUrl}/api/ateme/editAtemeService?atemeIP=${req.query.atemeIP}&uid=${req.query.uid}`,req.body,axiosConfig).then((response) =>{
+    //     resObj = response.data
+    // }).catch((err) =>{
+    //     resObj = err.response.data
+    // })
+    // res.status(resObj.status).json(resObj)
+
+
+    console.log("req.file.path",req.file.path);
+    var data = new FormData();
+    // data.append('service_json_file', fs.createReadStream(req.file.path));
+    data.append('service_json_file', req.file.buffer,req.file.originalname);
+    var config = {
+        method: 'put',
+        url: `${baseUrl}/api/ateme/editAtemeService?atemeIP=${req.query.atemeIP}&uid=${req.query.uid}`,
+        headers: { 
+            'token': req.headers.token, 
+            ...data.getHeaders()
+        },
+        data : data
+    };
+
+    await axios(config)
+    .then(function (response) {
+        console.log(JSON.stringify(response.data));
         resObj = response.data
-    }).catch((err) =>{
-        resObj = err.response.data
     })
+    .catch(function (error) {
+        console.log(error);
+        resObj = err.response.data
+    });
     res.status(resObj.status).json(resObj)
    
 })
@@ -270,7 +345,7 @@ app.put('/editAtemeService', async (req, res) => {
 app.post('/deleteInstance', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
+    axiosConfig.headers.token = req.headers.token
     await axios.post(`${baseUrl}/api/encoder/deleteInstance`,req.body,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
@@ -285,7 +360,7 @@ app.post('/deleteInstance', async (req, res) => {
 app.post('/getUserActivity', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
+    axiosConfig.headers.token = req.headers.token
     await axios.post(`${baseUrl}/api/utilities/getUserActivity`,req.body,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
@@ -300,7 +375,7 @@ app.post('/getUserActivity', async (req, res) => {
 app.post('/attatchLicense', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
+    axiosConfig.headers.token = req.headers.token
     await axios.post(`${baseUrl}/api/ateme/attatchLicense`,req.body,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
@@ -315,8 +390,8 @@ app.post('/attatchLicense', async (req, res) => {
 app.get('/getLicenseInstance', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
-    await axios.post(`${baseUrl}/api/encoder/getLicenseInstance?zone=${req.query.zone}`,axiosConfig).then((response) =>{
+    axiosConfig.headers.token = req.headers.token
+    await axios.get(`${baseUrl}/api/encoder/getLicenseInstance?zone=${req.query.zone}`,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
         resObj = err.response.data
@@ -330,8 +405,8 @@ app.get('/getLicenseInstance', async (req, res) => {
 app.get('/getMachines', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
-    await axios.post(`${baseUrl}/api/utilities/getMachines?zone=${req.query.zone}`,axiosConfig).then((response) =>{
+    axiosConfig.headers.token = req.headers.token
+    await axios.get(`${baseUrl}/api/utilities/getMachines?zone=${req.query.zone}`,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
         resObj = err.response.data
@@ -346,8 +421,8 @@ app.get('/getMachines', async (req, res) => {
 app.get('/getImages', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
-    await axios.post(`${baseUrl}/api/utilities/getImages`,axiosConfig).then((response) =>{
+    axiosConfig.headers.token = req.headers.token
+    await axios.get(`${baseUrl}/api/utilities/getImages`,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
         resObj = err.response.data
@@ -361,8 +436,8 @@ app.get('/getImages', async (req, res) => {
 app.get('/getSingleInstance', async (req, res) => {
 
     resObj = {}
-    axiosConfig.headers.token = token
-    await axios.post(`${baseUrl}/api/encoder/getSingleInstance?zone=${req.query.zone}&instanceName=${req.query.instanceName}`,axiosConfig).then((response) =>{
+    axiosConfig.headers.token = req.headers.token
+    await axios.get(`${baseUrl}/api/encoder/getSingleInstance?zone=${req.query.zone}&instanceName=${req.query.instanceName}`,axiosConfig).then((response) =>{
         resObj = response.data
     }).catch((err) =>{
         resObj = err.response.data
@@ -412,3 +487,18 @@ app.get('/getSingleInstance', async (req, res) => {
 //     res.status(200).json(resObj)
 
 // })
+
+function checkFileType(file, cb){
+    // Allowed ext
+    const filetypes = /json|JSON/;
+    // Check ext
+    const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
+    // Check mime
+    const mimetype = filetypes.test(file.mimetype);
+  
+    if(mimetype && extname){
+      return cb(null,true);
+    } else {
+      cb('Please upload a json file');
+    }
+}

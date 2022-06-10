@@ -1,0 +1,3024 @@
+[
+    {
+        "AntiAffinityUIDs": [],
+        "ApiVersion": "2.2.0.9",
+        "Device": {
+            "Template": {
+                "ApiVersion": "2.2.0.9",
+                "FormatConfigurations": [
+                    {
+                        "HLSMuxer": {
+                            "AUsPerAudioPES": 0,
+                            "AudioEncapsulatedInTs": false,
+                            "BitrateLimitEnabled": false,
+                            "DRM": {
+                                "DRMType": "None",
+                                "Fairplay": {
+                                    "ContentID": "",
+                                    "IntertrustKmsParameters": {
+                                        "customerAuthenticator": "911169567,a7bdd678a7ab40fca19c17fac99acce9",
+                                        "initializationVector": "00000000000000000000000000000000",
+                                        "keyEncryptionKey": "abcdefabcdefabcdef1234bbbbbbbb14",
+                                        "keyIdentifier": "4bf98b9ce87b4f1cac847ef90d6c0000"
+                                    },
+                                    "KeyDuration": 0,
+                                    "ScramblerKeyServerUrl": "https://api.service.expressplay.com/keystore",
+                                    "ServerType": "Intertrust KMS",
+                                    "SslParameters": {
+                                        "SslClientCertificate": {
+                                            "Name": "filename",
+                                            "UseCertificate": false
+                                        },
+                                        "SslPeerCertificate": {
+                                            "Authority": "Default authority",
+                                            "Name": "filename",
+                                            "VerifyCertificate": false
+                                        }
+                                    }
+                                },
+                                "RepeatKey": false,
+                                "VerimatrixSettings": {
+                                    "KeyDuration": 10,
+                                    "PublicKeyServerUrl": "",
+                                    "Resource": "",
+                                    "ScramblerKeyServerUrl": ""
+                                }
+                            },
+                            "DirectoryRollover": false,
+                            "MergeSMPTETTID3": false,
+                            "NumberOfSegmentsPerDirectory": 0,
+                            "Profiles": [
+                                {
+                                    "Disabled": false,
+                                    "HLSProperties": {
+                                        "AudioGroupId": "",
+                                        "Layout": {
+                                            "MediaFilesExtension": "",
+                                            "MediaFilesName": "",
+                                            "PlaylistName": "master_200.m3u8",
+                                            "SubDirectoryPath": ""
+                                        },
+                                        "ProfileType": "Standard",
+                                        "SubtitleGroupId": ""
+                                    },
+                                    "TracksMapping": {
+                                        "AudioTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 0
+                                            }
+                                        ],
+                                        "DataTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 0
+                                            }
+                                        ],
+                                        "VideoTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 0
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "Disabled": false,
+                                    "HLSProperties": {
+                                        "AudioGroupId": "",
+                                        "Layout": {
+                                            "MediaFilesExtension": "",
+                                            "MediaFilesName": "",
+                                            "PlaylistName": "master_350.m3u8",
+                                            "SubDirectoryPath": ""
+                                        },
+                                        "ProfileType": "Standard",
+                                        "SubtitleGroupId": ""
+                                    },
+                                    "TracksMapping": {
+                                        "AudioTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 0
+                                            }
+                                        ],
+                                        "DataTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 0
+                                            }
+                                        ],
+                                        "VideoTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "Disabled": false,
+                                    "HLSProperties": {
+                                        "AudioGroupId": "",
+                                        "Layout": {
+                                            "MediaFilesExtension": "",
+                                            "MediaFilesName": "",
+                                            "PlaylistName": "master_500.m3u8",
+                                            "SubDirectoryPath": ""
+                                        },
+                                        "ProfileType": "Standard",
+                                        "SubtitleGroupId": ""
+                                    },
+                                    "TracksMapping": {
+                                        "AudioTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 1
+                                            }
+                                        ],
+                                        "DataTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 0
+                                            }
+                                        ],
+                                        "VideoTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 2
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "Disabled": false,
+                                    "HLSProperties": {
+                                        "AudioGroupId": "",
+                                        "Layout": {
+                                            "MediaFilesExtension": "",
+                                            "MediaFilesName": "",
+                                            "PlaylistName": "master_700.m3u8",
+                                            "SubDirectoryPath": ""
+                                        },
+                                        "ProfileType": "Standard",
+                                        "SubtitleGroupId": ""
+                                    },
+                                    "TracksMapping": {
+                                        "AudioTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 1
+                                            }
+                                        ],
+                                        "DataTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 0
+                                            }
+                                        ],
+                                        "VideoTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 3
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "Disabled": false,
+                                    "HLSProperties": {
+                                        "AudioGroupId": "",
+                                        "Layout": {
+                                            "MediaFilesExtension": "",
+                                            "MediaFilesName": "",
+                                            "PlaylistName": "master_950.m3u8",
+                                            "SubDirectoryPath": ""
+                                        },
+                                        "ProfileType": "Standard",
+                                        "SubtitleGroupId": ""
+                                    },
+                                    "TracksMapping": {
+                                        "AudioTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 2
+                                            }
+                                        ],
+                                        "DataTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 0
+                                            }
+                                        ],
+                                        "VideoTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 4
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "Disabled": false,
+                                    "HLSProperties": {
+                                        "AudioGroupId": "",
+                                        "Layout": {
+                                            "MediaFilesExtension": "",
+                                            "MediaFilesName": "",
+                                            "PlaylistName": "master_1350.m3u8",
+                                            "SubDirectoryPath": ""
+                                        },
+                                        "ProfileType": "Standard",
+                                        "SubtitleGroupId": ""
+                                    },
+                                    "TracksMapping": {
+                                        "AudioTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 2
+                                            }
+                                        ],
+                                        "DataTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 0
+                                            }
+                                        ],
+                                        "VideoTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 5
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "Disabled": false,
+                                    "HLSProperties": {
+                                        "AudioGroupId": "",
+                                        "Layout": {
+                                            "MediaFilesExtension": "",
+                                            "MediaFilesName": "",
+                                            "PlaylistName": "master_2000.m3u8",
+                                            "SubDirectoryPath": ""
+                                        },
+                                        "ProfileType": "Standard",
+                                        "SubtitleGroupId": ""
+                                    },
+                                    "TracksMapping": {
+                                        "AudioTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 2
+                                            }
+                                        ],
+                                        "DataTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 0
+                                            }
+                                        ],
+                                        "VideoTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 6
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "Disabled": false,
+                                    "HLSProperties": {
+                                        "AudioGroupId": "",
+                                        "Layout": {
+                                            "MediaFilesExtension": "",
+                                            "MediaFilesName": "",
+                                            "PlaylistName": "master_3000.m3u8",
+                                            "SubDirectoryPath": ""
+                                        },
+                                        "ProfileType": "Standard",
+                                        "SubtitleGroupId": ""
+                                    },
+                                    "TracksMapping": {
+                                        "AudioTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 2
+                                            }
+                                        ],
+                                        "DataTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 0
+                                            }
+                                        ],
+                                        "VideoTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 7
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "Disabled": false,
+                                    "HLSProperties": {
+                                        "AudioGroupId": "",
+                                        "Layout": {
+                                            "MediaFilesExtension": "",
+                                            "MediaFilesName": "",
+                                            "PlaylistName": "master_4500.m3u8",
+                                            "SubDirectoryPath": ""
+                                        },
+                                        "ProfileType": "Standard",
+                                        "SubtitleGroupId": ""
+                                    },
+                                    "TracksMapping": {
+                                        "AudioTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 2
+                                            }
+                                        ],
+                                        "DataTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 0
+                                            }
+                                        ],
+                                        "VideoTrackList": [
+                                            {
+                                                "TrackIdx": 0,
+                                                "VariantIdx": 8
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "RemovePadding": true,
+                            "RemovePaddingMinBitrate": 0,
+                            "SegmentAutoDelete": true,
+                            "SegmentDuration": 4000,
+                            "StartAtOne": false
+                        },
+                        "Type": "HLS"
+                    }
+                ],
+                "GlobalConfiguration": {
+                    "APIBlackout": {
+                        "LocalFilename": "Slate_Start.jpg",
+                        "MuteAudio": true,
+                        "MuteData": true,
+                        "Timeout": "6 hours",
+                        "UrlFilename": ""
+                    },
+                    "DecodingNode": "CPU",
+                    "GAVPLowerLatency": false,
+                    "HighUhdQuality": false,
+                    "InputFrameRateRestriction": {
+                        "Denominator": 1,
+                        "FrameRate": "None",
+                        "Numerator": 25
+                    },
+                    "InputOutputSwitchingMode": "Automatic with current settings",
+                    "LatencyMode": "Best quality",
+                    "LowerDecoderLatency": false,
+                    "MasterClock": "Video input",
+                    "MusicChannel": false,
+                    "ProgramDelay": 0,
+                    "RelaxedLipSync": false,
+                    "UseLegacyDecoder": false,
+                    "UseLegacyHEVCDecoder": true,
+                    "VCADecoder": "GPU",
+                    "VCAEncoder": "Auto",
+                    "VCALowerLatency": false
+                },
+                "Name": "(test1) (Clone 1) (Custom 1) iPad p25",
+                "Static": false,
+                "Tracks": {
+                    "AudioTracks": [
+                        {
+                            "AudioDescription": false,
+                            "AudioEmulationMode": {
+                                "Mode": "Silence",
+                                "Tone": 1
+                            },
+                            "ChunkPeriod": 10000,
+                            "Descriptors": {
+                                "AudioType": "Undefined",
+                                "ComponentDescriptor": {
+                                    "ComponentTag": 0,
+                                    "ComponentType": 0,
+                                    "Description": "",
+                                    "Enable": false,
+                                    "Language": "",
+                                    "StreamContent": 0
+                                },
+                                "CustomDescriptors": [],
+                                "EnableLanguageDescriptor": true,
+                                "MaxBitrate": false,
+                                "MaxBitrateDescriptor": true,
+                                "SupplementaryAudioDescriptor": {
+                                    "ADDescriptor": {
+                                        "Fade": 0,
+                                        "GainCenter": 0,
+                                        "GainFront": 0,
+                                        "GainSurround": 0,
+                                        "Mode": "Override",
+                                        "Pan": 0,
+                                        "VersionTextTag": 0
+                                    },
+                                    "EditorialClassification": "Main audio",
+                                    "Language": "",
+                                    "MixType": "BroadcastMixed",
+                                    "UseControlTrack": false
+                                }
+                            },
+                            "DualMonoChannel": {
+                                "Channel": "MONO_A"
+                            },
+                            "EnablePeriodicChunking": false,
+                            "Encoding": {
+                                "AACParameters": {
+                                    "AACMetadata": {
+                                        "DialogNormalization": -27,
+                                        "DynamicRangeCompression": {
+                                            "LineMode": "Film Standard",
+                                            "RFMode": "Film Standard"
+                                        },
+                                        "Mode": "Fallback",
+                                        "Override": false
+                                    },
+                                    "Descriptors": {
+                                        "AACAudioDescriptor": true,
+                                        "MPEG2AACAudioDescriptor": true
+                                    },
+                                    "Format": "Auto",
+                                    "Layout": "Stereo",
+                                    "MetaDataAudio": "MPEG",
+                                    "MidSizeStereo": true,
+                                    "Profile": "Low Complexity",
+                                    "TemporalNoiseShaping": true
+                                },
+                                "Codec": "MPEG AAC",
+                                "DolbyAC4Parameters": {
+                                    "AtmosLayout": "5.1.4 - L, R, C, LFE, Ls, Rs, Ltf, Rtf, Ltr, Rtr",
+                                    "FollowVideoChunking": true,
+                                    "FrameRate": "Follow video frame rate",
+                                    "IFramesInterval": 50,
+                                    "Layout": "Stereo"
+                                },
+                                "DolbyParameters": {
+                                    "Advanced": {
+                                        "AtmosTrims": {
+                                            "HeightTrims": "Auto",
+                                            "SurroundTrims": "Auto"
+                                        },
+                                        "AudioProductionInformation": {
+                                            "ADConverter": "Standard",
+                                            "PeakMixingLevel": 105,
+                                            "RoomType": "Small Room, Flat Monitor"
+                                        },
+                                        "Bitstream": {
+                                            "SubstreamID": 0,
+                                            "Type": "Independent"
+                                        },
+                                        "DynamicRangeCompression": {
+                                            "LineMode": "Film Standard",
+                                            "RFMode": "Film Standard"
+                                        },
+                                        "InputFiltering": {
+                                            "BandwidthLowPassFilter": true,
+                                            "DCHighPassFilter": true,
+                                            "DigitalDeEmphasis": "Auto",
+                                            "LFELowPassFilter": true
+                                        },
+                                        "MixLevels": {
+                                            "CenterLORO": "-3.0 dB",
+                                            "CenterRTLT": "-3.0 dB",
+                                            "SurroundLORO": "-3.0 dB",
+                                            "SurroundLTRT": "-3.0 dB"
+                                        },
+                                        "MixingMetadata": {
+                                            "DolbyHeadPhoneMode": "Auto",
+                                            "DolbySurroundEXMode": "Auto",
+                                            "DolbySurroundMode": "Auto",
+                                            "StereoDownMix": "Unspecified"
+                                        },
+                                        "SurroundChannelProcessing": {
+                                            "Attenuation": false,
+                                            "PhaseShift": true
+                                        }
+                                    },
+                                    "AudioCodingMode": "2/0 - L R",
+                                    "BitStreamMode": "Complete Main",
+                                    "CopyrightBit": true,
+                                    "DdeMetaData": false,
+                                    "Descriptors": {
+                                        "AC3Descriptor": true,
+                                        "EnhancedAC3Descriptor": true
+                                    },
+                                    "DialogNormalization": -23,
+                                    "DolbyAtmos": false,
+                                    "InputChannelConfiguration": "5.1.4 - L, R, C, LFE, Ls, Rs, Ltf, Rtf, Ltr, Rtr",
+                                    "LfeChannel": true,
+                                    "Original": true
+                                },
+                                "MPEGL2Parameters": {
+                                    "CopyrightFlag": true,
+                                    "Descriptors": {
+                                        "AudioStreamDescriptor": true
+                                    },
+                                    "JointStereoFlag": false,
+                                    "Layout": "Stereo",
+                                    "OriginalFlag": true
+                                },
+                                "PCMParameters": null,
+                                "Passthrough": false
+                            },
+                            "FollowInputPid": false,
+                            "Gain": 0,
+                            "KantarWatermarkingEncoder": {
+                                "ChannelName": "",
+                                "Enabled": false
+                            },
+                            "Language": "",
+                            "LoudnessControl": {
+                                "NormalizationLeveler": {
+                                    "Enable": false,
+                                    "Mode": "EBU_R 128",
+                                    "Target": -23
+                                },
+                                "TruePeakLimiter": {
+                                    "Enable": false,
+                                    "MaximumPermittedLevel": -1
+                                }
+                            },
+                            "Offset": 0,
+                            "Pid": 0,
+                            "S302MChannelMapping": {
+                                "AudioType": "PCM Stereo",
+                                "Channels": [
+                                    "Pair1 Ch1"
+                                ],
+                                "Enable": false
+                            },
+                            "StreamIdentifier": {
+                                "ComponentTag": 0,
+                                "Enable": false
+                            },
+                            "StreamType": {
+                                "CustomStreamType": 0,
+                                "Enable": false
+                            },
+                            "TrackComposition": {
+                                "Channels": []
+                            },
+                            "Variants": [
+                                {
+                                    "AACParameters": {
+                                        "BitRate": 32000,
+                                        "Bitrates": {
+                                            "Mono": 128000,
+                                            "Stereo": 128000,
+                                            "Surround51": 128000,
+                                            "Surround71": 128000
+                                        },
+                                        "SampleRate": "48 kHz"
+                                    },
+                                    "DolbyAC4Parameters": {
+                                        "BitRate": "96 kbit/s",
+                                        "MetadataSource": "User",
+                                        "SampleRate": "48 kHz"
+                                    },
+                                    "DolbyParameters": {
+                                        "BitRate": "128 kbit/s",
+                                        "Bitrates": {
+                                            "Bitrate10": "128 kbit/s",
+                                            "Bitrate20": "128 kbit/s",
+                                            "Bitrate21": "192 kbit/s",
+                                            "Bitrate22": "256 kbit/s",
+                                            "Bitrate30": "192 kbit/s",
+                                            "Bitrate31": "256 kbit/s",
+                                            "Bitrate32": "512 kbit/s"
+                                        },
+                                        "MetadataSource": "User",
+                                        "SampleRate": "48 kHz"
+                                    },
+                                    "DolbyPassthroughParameters": {
+                                        "RateControl": {
+                                            "MaximumBitrate": 832000
+                                        }
+                                    },
+                                    "DropPidParameters": {
+                                        "DropOnAudioDescriptor": false,
+                                        "DropOnSilence": false,
+                                        "KeepAlive": {
+                                            "Enable": false,
+                                            "Period": 1000
+                                        },
+                                        "Timeout": 0
+                                    },
+                                    "MPEGHParameters": {
+                                        "BitRate": 384000
+                                    },
+                                    "MPEGL2Parameters": {
+                                        "BitRate": "128 kbit/s",
+                                        "Bitrates": {
+                                            "Mono": "128 kbit/s",
+                                            "Stereo": "128 kbit/s"
+                                        },
+                                        "ExtendedBandwith": false,
+                                        "SampleRate": "48 kHz"
+                                    },
+                                    "PassthroughParameters": {
+                                        "RateControl": {
+                                            "MaximumBitrate": 640000
+                                        }
+                                    },
+                                    "S302MParameters": {
+                                        "BitsPerSample": "16",
+                                        "ChannelIdentification": 0,
+                                        "Channels": [
+                                            "Front (L,R)"
+                                        ],
+                                        "EnableEvertzCompatibility": false,
+                                        "Framerate": "Auto"
+                                    },
+                                    "S302MPassthroughParameters": {
+                                        "BitsPerSample": "24",
+                                        "ChannelIdentification": 0,
+                                        "FrameRate": "25",
+                                        "NbPairs": 1,
+                                        "OverrideChannelIdentification": false,
+                                        "PairsFiltering": false,
+                                        "PairsSelection": [
+                                            false,
+                                            false,
+                                            false,
+                                            false
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AACParameters": {
+                                        "BitRate": 64000,
+                                        "Bitrates": {
+                                            "Mono": 128000,
+                                            "Stereo": 128000,
+                                            "Surround51": 128000,
+                                            "Surround71": 128000
+                                        },
+                                        "SampleRate": "48 kHz"
+                                    },
+                                    "DolbyAC4Parameters": {
+                                        "BitRate": "96 kbit/s",
+                                        "MetadataSource": "User",
+                                        "SampleRate": "48 kHz"
+                                    },
+                                    "DolbyParameters": {
+                                        "BitRate": "128 kbit/s",
+                                        "Bitrates": {
+                                            "Bitrate10": "128 kbit/s",
+                                            "Bitrate20": "128 kbit/s",
+                                            "Bitrate21": "192 kbit/s",
+                                            "Bitrate22": "256 kbit/s",
+                                            "Bitrate30": "192 kbit/s",
+                                            "Bitrate31": "256 kbit/s",
+                                            "Bitrate32": "512 kbit/s"
+                                        },
+                                        "MetadataSource": "User",
+                                        "SampleRate": "48 kHz"
+                                    },
+                                    "DolbyPassthroughParameters": {
+                                        "RateControl": {
+                                            "MaximumBitrate": 832000
+                                        }
+                                    },
+                                    "DropPidParameters": {
+                                        "DropOnAudioDescriptor": false,
+                                        "DropOnSilence": false,
+                                        "KeepAlive": {
+                                            "Enable": false,
+                                            "Period": 1000
+                                        },
+                                        "Timeout": 0
+                                    },
+                                    "MPEGHParameters": {
+                                        "BitRate": 384000
+                                    },
+                                    "MPEGL2Parameters": {
+                                        "BitRate": "128 kbit/s",
+                                        "Bitrates": {
+                                            "Mono": "128 kbit/s",
+                                            "Stereo": "128 kbit/s"
+                                        },
+                                        "ExtendedBandwith": false,
+                                        "SampleRate": "48 kHz"
+                                    },
+                                    "PassthroughParameters": {
+                                        "RateControl": {
+                                            "MaximumBitrate": 640000
+                                        }
+                                    },
+                                    "S302MParameters": {
+                                        "BitsPerSample": "16",
+                                        "ChannelIdentification": 0,
+                                        "Channels": [
+                                            "Front (L,R)"
+                                        ],
+                                        "EnableEvertzCompatibility": false,
+                                        "Framerate": "Auto"
+                                    },
+                                    "S302MPassthroughParameters": {
+                                        "BitsPerSample": "24",
+                                        "ChannelIdentification": 0,
+                                        "FrameRate": "25",
+                                        "NbPairs": 1,
+                                        "OverrideChannelIdentification": false,
+                                        "PairsFiltering": false,
+                                        "PairsSelection": [
+                                            false,
+                                            false,
+                                            false,
+                                            false
+                                        ]
+                                    }
+                                },
+                                {
+                                    "AACParameters": {
+                                        "BitRate": 96000,
+                                        "Bitrates": {
+                                            "Mono": 128000,
+                                            "Stereo": 128000,
+                                            "Surround51": 128000,
+                                            "Surround71": 128000
+                                        },
+                                        "SampleRate": "48 kHz"
+                                    },
+                                    "DolbyAC4Parameters": {
+                                        "BitRate": "96 kbit/s",
+                                        "MetadataSource": "User",
+                                        "SampleRate": "48 kHz"
+                                    },
+                                    "DolbyParameters": {
+                                        "BitRate": "128 kbit/s",
+                                        "Bitrates": {
+                                            "Bitrate10": "128 kbit/s",
+                                            "Bitrate20": "128 kbit/s",
+                                            "Bitrate21": "192 kbit/s",
+                                            "Bitrate22": "256 kbit/s",
+                                            "Bitrate30": "192 kbit/s",
+                                            "Bitrate31": "256 kbit/s",
+                                            "Bitrate32": "512 kbit/s"
+                                        },
+                                        "MetadataSource": "User",
+                                        "SampleRate": "48 kHz"
+                                    },
+                                    "DolbyPassthroughParameters": {
+                                        "RateControl": {
+                                            "MaximumBitrate": 832000
+                                        }
+                                    },
+                                    "DropPidParameters": {
+                                        "DropOnAudioDescriptor": false,
+                                        "DropOnSilence": false,
+                                        "KeepAlive": {
+                                            "Enable": false,
+                                            "Period": 1000
+                                        },
+                                        "Timeout": 0
+                                    },
+                                    "MPEGHParameters": {
+                                        "BitRate": 384000
+                                    },
+                                    "MPEGL2Parameters": {
+                                        "BitRate": "128 kbit/s",
+                                        "Bitrates": {
+                                            "Mono": "128 kbit/s",
+                                            "Stereo": "128 kbit/s"
+                                        },
+                                        "ExtendedBandwith": false,
+                                        "SampleRate": "48 kHz"
+                                    },
+                                    "PassthroughParameters": {
+                                        "RateControl": {
+                                            "MaximumBitrate": 640000
+                                        }
+                                    },
+                                    "S302MParameters": {
+                                        "BitsPerSample": "16",
+                                        "ChannelIdentification": 0,
+                                        "Channels": [
+                                            "Front (L,R)"
+                                        ],
+                                        "EnableEvertzCompatibility": false,
+                                        "Framerate": "Auto"
+                                    },
+                                    "S302MPassthroughParameters": {
+                                        "BitsPerSample": "24",
+                                        "ChannelIdentification": 0,
+                                        "FrameRate": "25",
+                                        "NbPairs": 1,
+                                        "OverrideChannelIdentification": false,
+                                        "PairsFiltering": false,
+                                        "PairsSelection": [
+                                            false,
+                                            false,
+                                            false,
+                                            false
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "DataTracks": [
+                        {
+                            "Descriptors": {
+                                "ComponentDescriptor": {
+                                    "ComponentTag": 0,
+                                    "ComponentType": 0,
+                                    "Description": "",
+                                    "Enable": false,
+                                    "Language": "",
+                                    "StreamContent": 0
+                                },
+                                "CustomDescriptors": [],
+                                "EnableLanguageDescriptor": true
+                            },
+                            "Encoding": {
+                                "AIT": {
+                                    "RateControl": {
+                                        "MaximumBitrate": 20000
+                                    }
+                                },
+                                "BurnedSubtitles": {
+                                    "OverridePosition": false,
+                                    "Position": 0
+                                },
+                                "CCSubPassThrough": {
+                                    "OutputFormat": {
+                                        "CEA708": false,
+                                        "CEA708FromEIA608": "Fallback",
+                                        "ClosedCaptionsDelay": 0,
+                                        "Divicom": false,
+                                        "EIA608": true,
+                                        "NADBSLine21": false,
+                                        "SCTE20": false
+                                    }
+                                },
+                                "ClosedCaptions": {
+                                    "CCAncillary": {
+                                        "FullPassThrough": false,
+                                        "Source": "Video input"
+                                    },
+                                    "Channel": "CC1",
+                                    "InputCompatibility": {
+                                        "IgnoreATSC": false,
+                                        "IgnoreDivicom": false,
+                                        "IgnoreNADBSLine21": false,
+                                        "IgnoreSCTE20": false
+                                    },
+                                    "Standard": "608"
+                                },
+                                "Codec": "SCTE-35 Pass-through",
+                                "DVB Sub to SCTE-27": {
+                                    "RateControl": {
+                                        "MaximumBitrate": 20000
+                                    }
+                                },
+                                "DvbSubtitles": {
+                                    "DvbSubPassThrough": {
+                                        "AlwaysInsertDisplaySet": false,
+                                        "Colors": "2",
+                                        "Descriptors": {
+                                            "SubtitlingDescriptor": true
+                                        },
+                                        "KeepAlive": {
+                                            "Enable": false,
+                                            "Period": 500
+                                        },
+                                        "MinPtsPcrInterval": 1000,
+                                        "PositionOffset": {
+                                            "OffsetX": 0,
+                                            "OffsetY": 0
+                                        },
+                                        "RateControl": {
+                                            "MaximumBitrate": 0
+                                        },
+                                        "Resolution": "Pass-through",
+                                        "StartAtClutId": 0,
+                                        "StartAtPageId": 0,
+                                        "StartAtRegionId": 0,
+                                        "TimeShift": 0
+                                    },
+                                    "Source": "DVB Subtitles",
+                                    "TeletextToDvbSub": {
+                                        "AlphaBlackAsEndBox": false,
+                                        "Page": 100,
+                                        "RateControl": {
+                                            "MaximumBitrate": 0
+                                        },
+                                        "Scte104SubtitleRetiming": {
+                                            "Default": 1000,
+                                            "Enable": false,
+                                            "Timeout": 10000
+                                        },
+                                        "SubtitleDisplay": {
+                                            "AlwaysInsertDisplaySet": false,
+                                            "AutoRemoveDelay": 10,
+                                            "BackgroundSize": 100,
+                                            "BoxColor": "Black",
+                                            "BoxColorValue": "000000",
+                                            "BoxTransparency": 0,
+                                            "Definition": "HD",
+                                            "EnableAntiAliasing": true,
+                                            "FileName": "filename",
+                                            "KeepAlive": {
+                                                "Enable": false,
+                                                "Period": 500
+                                            },
+                                            "KeepTeletextAlignment": false,
+                                            "LeftMargin": 0,
+                                            "MinPtsPcrInterval": 1000,
+                                            "OutlineColorValue": "000000",
+                                            "OutlineTransparency": 0,
+                                            "OutlineWidth": 3,
+                                            "RenderingAreaHeight": 900,
+                                            "RenderingAreaVerticalOffset": 87,
+                                            "RightMargin": 0,
+                                            "StartAtClutId": 0,
+                                            "StartAtPageId": 0,
+                                            "StartAtRegionId": 0,
+                                            "TextColor": "Auto",
+                                            "TextColorValue": "000000",
+                                            "TextSize": 100,
+                                            "TextTransparency": 0
+                                        }
+                                    }
+                                },
+                                "DvbTtmlPassthrough": {
+                                    "KeepAlive": {
+                                        "Enable": false,
+                                        "Period": 500
+                                    },
+                                    "RateControl": {
+                                        "MaximumBitrate": 0
+                                    }
+                                },
+                                "ID3": {
+                                    "ID3List": [],
+                                    "MaximumBitrate": 0
+                                },
+                                "NielsenWatermarking": {
+                                    "BreakoutCode": "Custom",
+                                    "BreakoutCodeValue": 0,
+                                    "DistributorID": ""
+                                },
+                                "PIDPassthrough": {
+                                    "DropOnSplicing": false
+                                },
+                                "PassThrough": {
+                                    "MaximumBitrate": 1000000,
+                                    "TimeOffset": 0,
+                                    "VideoSync": false
+                                },
+                                "Scte35": {
+                                    "ESAM": {
+                                        "AcquisitionPointId": "SKN_FANCODE_Test",
+                                        "AlternateContent": [],
+                                        "Enable": false,
+                                        "ForceSCTE35Passthrough": true,
+                                        "ListeningPort": 666,
+                                        "PoisAddress": "103.205.124.130",
+                                        "PoisPackagerUrl": "",
+                                        "PoisPort": 80,
+                                        "PoisTranscoderUrl": "/ssc/signal",
+                                        "UtcPointDeltaMsImmediateRequests": 3000,
+                                        "ZoneIdentity": ""
+                                    },
+                                    "SCTE104": {
+                                        "AsIndex": "",
+                                        "DID": 65,
+                                        "DpiPidIndex": "",
+                                        "PSP": false,
+                                        "SDID": 7
+                                    },
+                                    "SCTE35": {
+                                        "CrossStreamID": false,
+                                        "DefaultSpliceDuration": 300,
+                                        "IncreaseSCTE35armTime": true,
+                                        "OutputSpliceNullCommands": false,
+                                        "RateControl": {
+                                            "MaximumBitrate": 3000
+                                        },
+                                        "SpliceNullEventID": 0,
+                                        "SpliceNullInterval": 1000,
+                                        "SpliceNullURI": "",
+                                        "StreamConditioning": "On SCTE35 splice points",
+                                        "TriggerOffset": 100,
+                                        "UseSpliceInsertToDetectProgramBoundaries": false
+                                    },
+                                    "SCTE35Blackout": {
+                                        "Enable": false,
+                                        "LocalFilename": "",
+                                        "MuteAudio": true,
+                                        "MuteData": true,
+                                        "SpliceInsertTrigger": false,
+                                        "Timeout": 0,
+                                        "UrlFilename": ""
+                                    },
+                                    "SCTE35Filtering": {
+                                        "CommandFilter": {
+                                            "BandwidthReservation": false,
+                                            "OtherCommands": false,
+                                            "SpliceInsert": false,
+                                            "SpliceNull": false,
+                                            "SpliceSchedule": false,
+                                            "TimeSignal": false
+                                        }
+                                    },
+                                    "SCTE35Recording": {
+                                        "Enable": false
+                                    },
+                                    "Source": "Video input"
+                                },
+                                "Smpte2038": {
+                                    "MaximumBitrate": 300000,
+                                    "OthersAncillary": {
+                                        "FullPassThrough": false,
+                                        "Source": "Video input"
+                                    },
+                                    "VITCAncillary": {
+                                        "FullPassThrough": false,
+                                        "Source": "Video input"
+                                    }
+                                },
+                                "TEMI": {
+                                    "FreeRunningCheck": false,
+                                    "FreeRunningTimeout": 10,
+                                    "InsertionFrequency": 1,
+                                    "InsertionMode": "VANC",
+                                    "Url": ""
+                                },
+                                "TTML": {
+                                    "ClosedCaptionsToImsc1": {
+                                        "RateControl": {
+                                            "MaximumBitrate": 0
+                                        }
+                                    },
+                                    "DvbSubToSMPTE": {
+                                        "FullRegion": false,
+                                        "RateControl": {
+                                            "MaximumBitrate": 50000
+                                        },
+                                        "UsePInDiv": false,
+                                        "WithoutSharp": false
+                                    },
+                                    "EmbedAs": "TTML External XML",
+                                    "EnableOCR": false,
+                                    "Profile": "SMPTE-TT",
+                                    "Source": "DVB Sub",
+                                    "TeletextToSMPTE": {
+                                        "AlphaBlackAsEndBox": false,
+                                        "Page": 100,
+                                        "SMPTESubtitleDisplay": {
+                                            "BoxColor": "Black",
+                                            "BoxColorValue": "000000",
+                                            "BoxTransparency": 0,
+                                            "TextColor": "Auto",
+                                            "TextColorValue": "000000",
+                                            "TextTransparency": 0
+                                        }
+                                    },
+                                    "TimeBase": "Pts"
+                                },
+                                "Teletext": {
+                                    "Source": "DVB Subtitles",
+                                    "TeletextOCR": {
+                                        "Alignment": "Center",
+                                        "MaximumBitrate": 0,
+                                        "Page": 100
+                                    },
+                                    "TeletextPassThrough": {
+                                        "Emulation": false,
+                                        "FieldsFiltering": "7-22,320-335",
+                                        "FullPassThrough": true,
+                                        "RateControl": {
+                                            "MaximumBitrate": 0
+                                        },
+                                        "Scte104SubtitleRetiming": {
+                                            "Default": 1000,
+                                            "Enable": false,
+                                            "Timeout": 10000
+                                        },
+                                        "TeletextDescriptors": [
+                                            {
+                                                "Enable": false,
+                                                "Language": "",
+                                                "Page": 100,
+                                                "TeletextPageType": "Initial Teletext page"
+                                            },
+                                            {
+                                                "Enable": false,
+                                                "Language": "",
+                                                "Page": 100,
+                                                "TeletextPageType": "Initial Teletext page"
+                                            },
+                                            {
+                                                "Enable": false,
+                                                "Language": "",
+                                                "Page": 100,
+                                                "TeletextPageType": "Initial Teletext page"
+                                            },
+                                            {
+                                                "Enable": false,
+                                                "Language": "",
+                                                "Page": 100,
+                                                "TeletextPageType": "Initial Teletext page"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "TeletextToBurnedSubtitles": {
+                                    "AlphaBlackAsEndBox": false,
+                                    "Page": 100,
+                                    "SubtitleDisplay": {
+                                        "AlwaysInsertDisplaySet": false,
+                                        "AutoRemoveDelay": 10,
+                                        "BackgroundSize": 100,
+                                        "BoxColor": "Black",
+                                        "BoxColorValue": "000000",
+                                        "BoxTransparency": 0,
+                                        "Definition": "HD",
+                                        "EnableAntiAliasing": true,
+                                        "FileName": "filename",
+                                        "KeepAlive": {
+                                            "Enable": false,
+                                            "Period": 500
+                                        },
+                                        "KeepTeletextAlignment": false,
+                                        "LeftMargin": 0,
+                                        "MinPtsPcrInterval": 1000,
+                                        "OutlineColorValue": "000000",
+                                        "OutlineTransparency": 0,
+                                        "OutlineWidth": 3,
+                                        "RenderingAreaHeight": 900,
+                                        "RenderingAreaVerticalOffset": 87,
+                                        "RightMargin": 0,
+                                        "StartAtClutId": 0,
+                                        "StartAtPageId": 0,
+                                        "StartAtRegionId": 0,
+                                        "TextColor": "Auto",
+                                        "TextColorValue": "000000",
+                                        "TextSize": 100,
+                                        "TextTransparency": 0
+                                    }
+                                },
+                                "TeletextToDvbTtml": {
+                                    "AlphaBlackAsEndBox": false,
+                                    "KeepAlive": {
+                                        "Enable": false,
+                                        "Period": 500
+                                    },
+                                    "Page": 100,
+                                    "Qualifier": {
+                                        "Accessibility": false,
+                                        "Cadence": "Default",
+                                        "Enabled": false,
+                                        "Monochrome": false,
+                                        "Size": "Default"
+                                    },
+                                    "RateControl": {
+                                        "MaximumBitrate": 0
+                                    },
+                                    "SubtitlePurpose": "Same language dialogue",
+                                    "TTSSuitability": "Unknown"
+                                },
+                                "Thumbnail": {
+                                    "FileName": "thumbnail.jpg",
+                                    "FileServer": "",
+                                    "Interface": "",
+                                    "OutputType": "File server",
+                                    "ThumbnailParameters": {
+                                        "Height": 360,
+                                        "Interval": "Period",
+                                        "Period": 4,
+                                        "Width": 640
+                                    },
+                                    "Url": "http://thumbnail.jpg"
+                                },
+                                "ThumbnailGeneration": {
+                                    "Height": 360,
+                                    "Interval": "Period",
+                                    "Period": 4,
+                                    "Width": 640
+                                },
+                                "Timecode": {
+                                    "Period": 1,
+                                    "VITCAncillary": {
+                                        "FullPassThrough": false,
+                                        "Source": "Video input"
+                                    }
+                                },
+                                "WebVTT": {
+                                    "P31": {
+                                        "Language": "eng",
+                                        "Offset": 0
+                                    },
+                                    "Source": "Teletext",
+                                    "Teletext": {
+                                        "AlphaBlackAsEndBox": false,
+                                        "Page": 888
+                                    }
+                                }
+                            },
+                            "FollowInputPid": false,
+                            "Language": "",
+                            "Pid": 0,
+                            "StreamIdentifier": {
+                                "ComponentTag": 0,
+                                "Enable": false
+                            },
+                            "Variants": [
+                                {}
+                            ]
+                        }
+                    ],
+                    "ReshuffledAudioTracks": [],
+                    "VideoTracks": [
+                        {
+                            "AllowIDRBetweenChunkBoundaries": false,
+                            "BlazingMode": false,
+                            "ChunkPeriod": 4000,
+                            "Cropping": {
+                                "Enable": false,
+                                "Height": 0,
+                                "Left": 0,
+                                "Top": 0,
+                                "Width": 0
+                            },
+                            "Deblocking": "None",
+                            "Deinterlacer": "Auto",
+                            "Denoiser": {
+                                "DenoiserType": "None"
+                            },
+                            "Descriptors": {
+                                "ComponentDescriptor": {
+                                    "ComponentTag": 0,
+                                    "ComponentType": 0,
+                                    "Enable": false,
+                                    "Language": "",
+                                    "StreamContent": 0
+                                },
+                                "MaxBitrateDescriptor": true
+                            },
+                            "DisableBbcLuts": false,
+                            "EmulationMode": {
+                                "Mode": "Freeze",
+                                "PatternName": "blackout.png",
+                                "Urls": [
+                                    ""
+                                ]
+                            },
+                            "EnableBoundaryChunkDuration": false,
+                            "EnablePeriodicChunking": true,
+                            "Encoding": {
+                                "AdvancedParameters": {
+                                    "Afd": false,
+                                    "DisableBordersOptimization": true,
+                                    "DisableDefaultDisplayWindow": false,
+                                    "DisableErrorConcealment": false,
+                                    "EnableAdaptiveInterlacedSignaling": false,
+                                    "EnableOpenGop": false,
+                                    "Entropy": "CABAC",
+                                    "ExtendDPBArea": false,
+                                    "FcodeLimitCompatibility": false,
+                                    "ForceIdr": true,
+                                    "HighDensityStatmux": false,
+                                    "Hrd": true,
+                                    "Improved422Interoperability": false,
+                                    "IntraDcPrecision": 8,
+                                    "MultiReferences": true,
+                                    "NumberOfSlices": "Auto",
+                                    "PictureDefinition": "Auto",
+                                    "PreserveBlackBorders": "Auto",
+                                    "Telecine": false,
+                                    "UseCustomMatrix": true,
+                                    "UseSinglePpsSps": true,
+                                    "WaveFrontParallelProcessing": false,
+                                    "WeightedPrediction": true
+                                },
+                                "BFrameConfiguration": {
+                                    "EnableHierarchical": true,
+                                    "Max": 7,
+                                    "Min": 0
+                                },
+                                "Codec": "MPEG-4",
+                                "Cpb": {
+                                    "BufferUnit": "ms",
+                                    "Size": 1000
+                                },
+                                "Deblocking": {
+                                    "Enable": true,
+                                    "Offset": -6
+                                },
+                                "VideoOptimization": "Visual Quality"
+                            },
+                            "FollowInputPid": false,
+                            "FollowInputResolution": false,
+                            "InputAspectRatio": {
+                                "AFDMode": "Preserve",
+                                "AspectRatioMode": "Preserve"
+                            },
+                            "InputColorimetryParameters": {
+                                "DynamicRange": "None",
+                                "InputColorimetryMode": "Preserve"
+                            },
+                            "InputFrameType": "Preserve",
+                            "InputOverscan": "Auto",
+                            "LogoInsertions": [
+                                {
+                                    "AspectRatio": {
+                                        "AspectRatio": "Use original",
+                                        "Denominator": 9,
+                                        "Numerator": 16
+                                    },
+                                    "Enable": false,
+                                    "FileName": "Fancoder-Stream-1_Bug_1.png",
+                                    "Left": 0,
+                                    "LogoSizeReference": "Width",
+                                    "PositionUnit": "Permillage",
+                                    "Size": 1000,
+                                    "Speed": "1",
+                                    "Top": 0,
+                                    "Type": "Video logo",
+                                    "UrlFilename": "",
+                                    "Urls": [
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "AspectRatio": {
+                                        "AspectRatio": "Use original",
+                                        "Denominator": 9,
+                                        "Numerator": 16
+                                    },
+                                    "Enable": false,
+                                    "FileName": "ChLogo_1.png",
+                                    "Left": 0,
+                                    "LogoSizeReference": "Width",
+                                    "PositionUnit": "Permillage",
+                                    "Size": 1000,
+                                    "Speed": "1",
+                                    "Top": 0,
+                                    "Type": "Video logo",
+                                    "UrlFilename": "",
+                                    "Urls": [
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "AspectRatio": {
+                                        "AspectRatio": "Use original",
+                                        "Denominator": 9,
+                                        "Numerator": 16
+                                    },
+                                    "Enable": false,
+                                    "FileName": "name",
+                                    "Left": 0,
+                                    "LogoSizeReference": "Width",
+                                    "Size": 100,
+                                    "Speed": "1",
+                                    "Top": 0,
+                                    "Urls": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "MaximumChunkDuration": 10000,
+                            "MinimumChunkDuration": 10000,
+                            "MultiVariantPid": false,
+                            "OutputColorimetryParameters": {
+                                "DynamicRange": "Pass-through",
+                                "HdrConversionMethod": "Preserve SDR-look"
+                            },
+                            "PerformColorimetryConversion": false,
+                            "Pid": 0,
+                            "Sharpener": "+1",
+                            "Simplifier": {
+                                "SimplifierType": "None"
+                            },
+                            "StreamIdentifier": {
+                                "ComponentTag": 0,
+                                "Enable": false
+                            },
+                            "TechnicolorPhilips": "None",
+                            "Variants": [
+                                {
+                                    "BFrameConfiguration": {
+                                        "EnableHierarchical": true,
+                                        "Max": 7,
+                                        "Min": 0
+                                    },
+                                    "DisplayAspectRatio": {
+                                        "AspectRatio": "16:9",
+                                        "Denominator": 9,
+                                        "Numerator": 16
+                                    },
+                                    "Encoding": {
+                                        "AVCParameters": {
+                                            "Descriptors": {
+                                                "AVCVideoDescriptor": true
+                                            },
+                                            "Entropy": "CABAC",
+                                            "Level": "Auto",
+                                            "Profile": "Baseline"
+                                        },
+                                        "Bitrate": 200000,
+                                        "Codec": "MPEG-4",
+                                        "ContentAdaptative": {
+                                            "CQRMode": "None"
+                                        },
+                                        "FieldOrder": "Top field first",
+                                        "FrameType": "Progressive",
+                                        "GopParameters": {
+                                            "Fixed": true,
+                                            "GopSize": 50
+                                        },
+                                        "HEVCParameters": {
+                                            "Level": "Auto",
+                                            "Profile": "Main"
+                                        },
+                                        "MPEG2Parameters": {
+                                            "Level": "Main",
+                                            "Profile": "Simple"
+                                        },
+                                        "Mode": "Frame",
+                                        "TrickPlay": false
+                                    },
+                                    "EncodingNode": "CPU",
+                                    "FrameRateParameters": {
+                                        "Denominator": 5,
+                                        "FrameRate": "25",
+                                        "Numerator": 25
+                                    },
+                                    "FrameSizeParameters": {
+                                        "Height": 144,
+                                        "Resolution": "Custom",
+                                        "Width": 256
+                                    },
+                                    "LogoInsertions": [
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "Fancode-Stream-1_Bug_1.png",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "PositionUnit": "Permillage",
+                                            "Size": 1000,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Type": "Video logo",
+                                            "UrlFilename": "",
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "StillPicture": false,
+                                    "StillPictureDetection": {
+                                        "StillPictureBitrate": 500000,
+                                        "StillPictureDelay": 60,
+                                        "StillPictureDetectionMode": "None"
+                                    },
+                                    "StillPictureFilename": "blackout.png",
+                                    "VariantPid": 0,
+                                    "VideoSqueezeBack": {
+                                        "Enable": false
+                                    },
+                                    "Watermarking": {
+                                        "Apply": false,
+                                        "IrdetoSettings": {
+                                            "Banner": false,
+                                            "DirectID": 0,
+                                            "Mode": "A",
+                                            "Profile": "default"
+                                        }
+                                    }
+                                },
+                                {
+                                    "BFrameConfiguration": {
+                                        "EnableHierarchical": true,
+                                        "Max": 7,
+                                        "Min": 0
+                                    },
+                                    "DisplayAspectRatio": {
+                                        "AspectRatio": "16:9",
+                                        "Denominator": 9,
+                                        "Numerator": 16
+                                    },
+                                    "Encoding": {
+                                        "AVCParameters": {
+                                            "Descriptors": {
+                                                "AVCVideoDescriptor": true
+                                            },
+                                            "Entropy": "CABAC",
+                                            "Level": "Auto",
+                                            "Profile": "Baseline"
+                                        },
+                                        "Bitrate": 350000,
+                                        "Codec": "MPEG-4",
+                                        "ContentAdaptative": {
+                                            "CQRMode": "None"
+                                        },
+                                        "FieldOrder": "Top field first",
+                                        "FrameType": "Progressive",
+                                        "GopParameters": {
+                                            "Fixed": true,
+                                            "GopSize": 50
+                                        },
+                                        "HEVCParameters": {
+                                            "Level": "Auto",
+                                            "Profile": "Main"
+                                        },
+                                        "MPEG2Parameters": {
+                                            "Level": "Main",
+                                            "Profile": "Simple"
+                                        },
+                                        "Mode": "Frame",
+                                        "TrickPlay": false
+                                    },
+                                    "EncodingNode": "CPU",
+                                    "FrameRateParameters": {
+                                        "Denominator": 1,
+                                        "FrameRate": "25",
+                                        "Numerator": 25
+                                    },
+                                    "FrameSizeParameters": {
+                                        "Height": 240,
+                                        "Resolution": "Custom",
+                                        "Width": 426
+                                    },
+                                    "LogoInsertions": [
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "StillPicture": false,
+                                    "StillPictureDetection": {
+                                        "StillPictureBitrate": 500000,
+                                        "StillPictureDelay": 60,
+                                        "StillPictureDetectionMode": "None"
+                                    },
+                                    "StillPictureFilename": "blackout.png",
+                                    "VariantPid": 0,
+                                    "VideoSqueezeBack": {
+                                        "Enable": false
+                                    },
+                                    "Watermarking": {
+                                        "IrdetoSettings": {
+                                            "DirectID": 0,
+                                            "Mode": "A",
+                                            "Profile": "default"
+                                        }
+                                    }
+                                },
+                                {
+                                    "BFrameConfiguration": {
+                                        "EnableHierarchical": true,
+                                        "Max": 7,
+                                        "Min": 0
+                                    },
+                                    "DisplayAspectRatio": {
+                                        "AspectRatio": "16:9",
+                                        "Denominator": 9,
+                                        "Numerator": 16
+                                    },
+                                    "Encoding": {
+                                        "AVCParameters": {
+                                            "Descriptors": {
+                                                "AVCVideoDescriptor": true
+                                            },
+                                            "Entropy": "CABAC",
+                                            "Level": "Auto",
+                                            "Profile": "Main"
+                                        },
+                                        "Bitrate": 500000,
+                                        "Codec": "MPEG-4",
+                                        "ContentAdaptative": {
+                                            "CQRMode": "None"
+                                        },
+                                        "FieldOrder": "Top field first",
+                                        "FrameType": "Progressive",
+                                        "GopParameters": {
+                                            "Fixed": true,
+                                            "GopSize": 50
+                                        },
+                                        "HEVCParameters": {
+                                            "Level": "Auto",
+                                            "Profile": "Main"
+                                        },
+                                        "MPEG2Parameters": {
+                                            "Level": "Main",
+                                            "Profile": "Simple"
+                                        },
+                                        "Mode": "Frame"
+                                    },
+                                    "EncodingNode": "CPU",
+                                    "FrameRateParameters": {
+                                        "Denominator": 1,
+                                        "FrameRate": "25",
+                                        "Numerator": 25
+                                    },
+                                    "FrameSizeParameters": {
+                                        "Height": 360,
+                                        "Resolution": "Custom",
+                                        "Width": 640
+                                    },
+                                    "LogoInsertions": [
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "StillPictureDetection": {
+                                        "StillPictureBitrate": 500000,
+                                        "StillPictureDelay": 60,
+                                        "StillPictureDetectionMode": "None"
+                                    },
+                                    "StillPictureFilename": "blackout.png",
+                                    "VariantPid": 0,
+                                    "VideoSqueezeBack": {},
+                                    "Watermarking": {
+                                        "IrdetoSettings": {
+                                            "DirectID": 0,
+                                            "Mode": "A",
+                                            "Profile": "default"
+                                        }
+                                    }
+                                },
+                                {
+                                    "BFrameConfiguration": {
+                                        "EnableHierarchical": true,
+                                        "Max": 7,
+                                        "Min": 0
+                                    },
+                                    "DisplayAspectRatio": {
+                                        "AspectRatio": "16:9",
+                                        "Denominator": 9,
+                                        "Numerator": 16
+                                    },
+                                    "Encoding": {
+                                        "AVCParameters": {
+                                            "Descriptors": {
+                                                "AVCVideoDescriptor": true
+                                            },
+                                            "Entropy": "CABAC",
+                                            "Level": "Auto",
+                                            "Profile": "High"
+                                        },
+                                        "Bitrate": 700000,
+                                        "Codec": "MPEG-4",
+                                        "ContentAdaptative": {
+                                            "CQRMode": "None"
+                                        },
+                                        "FieldOrder": "Top field first",
+                                        "FrameType": "Progressive",
+                                        "GopParameters": {
+                                            "Fixed": true,
+                                            "GopSize": 50
+                                        },
+                                        "HEVCParameters": {
+                                            "Level": "Auto",
+                                            "Profile": "Main"
+                                        },
+                                        "MPEG2Parameters": {
+                                            "Level": "Main",
+                                            "Profile": "Simple"
+                                        },
+                                        "Mode": "Frame"
+                                    },
+                                    "EncodingNode": "CPU",
+                                    "FrameRateParameters": {
+                                        "Denominator": 1,
+                                        "FrameRate": "25",
+                                        "Numerator": 25
+                                    },
+                                    "FrameSizeParameters": {
+                                        "Height": 480,
+                                        "Resolution": "Custom",
+                                        "Width": 854
+                                    },
+                                    "LogoInsertions": [
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "StillPictureDetection": {
+                                        "StillPictureBitrate": 500000,
+                                        "StillPictureDelay": 60,
+                                        "StillPictureDetectionMode": "None"
+                                    },
+                                    "StillPictureFilename": "blackout.png",
+                                    "VariantPid": 0,
+                                    "VideoSqueezeBack": {},
+                                    "Watermarking": {
+                                        "IrdetoSettings": {
+                                            "DirectID": 0,
+                                            "Mode": "A",
+                                            "Profile": "default"
+                                        }
+                                    }
+                                },
+                                {
+                                    "BFrameConfiguration": {
+                                        "EnableHierarchical": true,
+                                        "Max": 7,
+                                        "Min": 0
+                                    },
+                                    "DisplayAspectRatio": {
+                                        "AspectRatio": "16:9",
+                                        "Denominator": 9,
+                                        "Numerator": 16
+                                    },
+                                    "Encoding": {
+                                        "AVCParameters": {
+                                            "Descriptors": {
+                                                "AVCVideoDescriptor": true
+                                            },
+                                            "Entropy": "CABAC",
+                                            "Level": "Auto",
+                                            "Profile": "High"
+                                        },
+                                        "Bitrate": 950000,
+                                        "Codec": "MPEG-4",
+                                        "ContentAdaptative": {
+                                            "CQRMode": "None"
+                                        },
+                                        "FieldOrder": "Top field first",
+                                        "FrameType": "Progressive",
+                                        "GopParameters": {
+                                            "Fixed": true,
+                                            "GopSize": 50
+                                        },
+                                        "HEVCParameters": {
+                                            "Level": "Auto",
+                                            "Profile": "Main"
+                                        },
+                                        "MPEG2Parameters": {
+                                            "Level": "Main",
+                                            "Profile": "Simple"
+                                        },
+                                        "Mode": "Frame",
+                                        "TrickPlay": false
+                                    },
+                                    "EncodingNode": "CPU",
+                                    "FrameRateParameters": {
+                                        "Denominator": 5,
+                                        "FrameRate": "25",
+                                        "Numerator": 25
+                                    },
+                                    "FrameSizeParameters": {
+                                        "Height": 540,
+                                        "Resolution": "Custom",
+                                        "Width": 960
+                                    },
+                                    "LogoInsertions": [
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "StillPicture": false,
+                                    "StillPictureDetection": {
+                                        "StillPictureBitrate": 500000,
+                                        "StillPictureDelay": 60,
+                                        "StillPictureDetectionMode": "None"
+                                    },
+                                    "StillPictureFilename": "blackout.png",
+                                    "VariantPid": 0,
+                                    "VideoSqueezeBack": {
+                                        "Enable": false
+                                    },
+                                    "Watermarking": {
+                                        "IrdetoSettings": {
+                                            "DirectID": 0,
+                                            "Mode": "A",
+                                            "Profile": "default"
+                                        }
+                                    }
+                                },
+                                {
+                                    "BFrameConfiguration": {
+                                        "EnableHierarchical": true,
+                                        "Max": 7,
+                                        "Min": 0
+                                    },
+                                    "DisplayAspectRatio": {
+                                        "AspectRatio": "16:9",
+                                        "Denominator": 9,
+                                        "Numerator": 16
+                                    },
+                                    "Encoding": {
+                                        "AVCParameters": {
+                                            "Descriptors": {
+                                                "AVCVideoDescriptor": true
+                                            },
+                                            "Entropy": "CABAC",
+                                            "Level": "Auto",
+                                            "Profile": "High"
+                                        },
+                                        "Bitrate": 1350000,
+                                        "Codec": "MPEG-4",
+                                        "ContentAdaptative": {
+                                            "CQRMode": "None"
+                                        },
+                                        "FieldOrder": "Top field first",
+                                        "FrameType": "Progressive",
+                                        "GopParameters": {
+                                            "Fixed": true,
+                                            "GopSize": 100
+                                        },
+                                        "HEVCParameters": {
+                                            "Level": "Auto",
+                                            "Profile": "Main"
+                                        },
+                                        "MPEG2Parameters": {
+                                            "Level": "Main",
+                                            "Profile": "Simple"
+                                        },
+                                        "Mode": "Frame",
+                                        "TrickPlay": false
+                                    },
+                                    "EncodingNode": "CPU",
+                                    "FrameRateParameters": {
+                                        "Denominator": 5,
+                                        "FrameRate": "50",
+                                        "Numerator": 25
+                                    },
+                                    "FrameSizeParameters": {
+                                        "Height": 576,
+                                        "Resolution": "1280x720",
+                                        "Width": 1024
+                                    },
+                                    "LogoInsertions": [
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "StillPicture": false,
+                                    "StillPictureDetection": {
+                                        "StillPictureBitrate": 500000,
+                                        "StillPictureDelay": 60,
+                                        "StillPictureDetectionMode": "None"
+                                    },
+                                    "StillPictureFilename": "blackout.png",
+                                    "VariantPid": 0,
+                                    "VideoSqueezeBack": {
+                                        "Enable": false
+                                    },
+                                    "Watermarking": {
+                                        "IrdetoSettings": {
+                                            "DirectID": 0,
+                                            "Mode": "A",
+                                            "Profile": "default"
+                                        }
+                                    }
+                                },
+                                {
+                                    "BFrameConfiguration": {
+                                        "EnableHierarchical": true,
+                                        "Max": 7,
+                                        "Min": 0
+                                    },
+                                    "DisplayAspectRatio": {
+                                        "AspectRatio": "16:9",
+                                        "Denominator": 9,
+                                        "Numerator": 16
+                                    },
+                                    "Encoding": {
+                                        "AVCParameters": {
+                                            "Descriptors": {
+                                                "AVCVideoDescriptor": true
+                                            },
+                                            "Entropy": "CABAC",
+                                            "Level": "Auto",
+                                            "Profile": "High"
+                                        },
+                                        "Bitrate": 2000000,
+                                        "Codec": "MPEG-4",
+                                        "ContentAdaptative": {
+                                            "CQRMode": "None"
+                                        },
+                                        "FieldOrder": "Top field first",
+                                        "FrameType": "Progressive",
+                                        "GopParameters": {
+                                            "Fixed": true,
+                                            "GopSize": 100
+                                        },
+                                        "HEVCParameters": {
+                                            "Level": "Auto",
+                                            "Profile": "Main"
+                                        },
+                                        "MPEG2Parameters": {
+                                            "Level": "Main",
+                                            "Profile": "Simple"
+                                        },
+                                        "Mode": "Frame",
+                                        "TrickPlay": false
+                                    },
+                                    "EncodingNode": "CPU",
+                                    "FrameRateParameters": {
+                                        "Denominator": 5,
+                                        "FrameRate": "50",
+                                        "Numerator": 25
+                                    },
+                                    "FrameSizeParameters": {
+                                        "Height": 576,
+                                        "Resolution": "1280x720",
+                                        "Width": 1024
+                                    },
+                                    "LogoInsertions": [
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "StillPicture": false,
+                                    "StillPictureDetection": {
+                                        "StillPictureBitrate": 500000,
+                                        "StillPictureDelay": 60,
+                                        "StillPictureDetectionMode": "None"
+                                    },
+                                    "StillPictureFilename": "blackout.png",
+                                    "VariantPid": 0,
+                                    "VideoSqueezeBack": {
+                                        "Enable": false
+                                    },
+                                    "Watermarking": {
+                                        "IrdetoSettings": {
+                                            "DirectID": 0,
+                                            "Mode": "A",
+                                            "Profile": "default"
+                                        }
+                                    }
+                                },
+                                {
+                                    "BFrameConfiguration": {
+                                        "EnableHierarchical": true,
+                                        "Max": 7,
+                                        "Min": 0
+                                    },
+                                    "DisplayAspectRatio": {
+                                        "AspectRatio": "16:9",
+                                        "Denominator": 9,
+                                        "Numerator": 16
+                                    },
+                                    "Encoding": {
+                                        "AVCParameters": {
+                                            "Descriptors": {
+                                                "AVCVideoDescriptor": true
+                                            },
+                                            "Entropy": "CABAC",
+                                            "Level": "Auto",
+                                            "Profile": "High"
+                                        },
+                                        "Bitrate": 3000000,
+                                        "Codec": "MPEG-4",
+                                        "ContentAdaptative": {
+                                            "CQRMode": "None"
+                                        },
+                                        "FieldOrder": "Top field first",
+                                        "FrameType": "Progressive",
+                                        "GopParameters": {
+                                            "Fixed": true,
+                                            "GopSize": 100
+                                        },
+                                        "HEVCParameters": {
+                                            "Level": "Auto",
+                                            "Profile": "Main"
+                                        },
+                                        "MPEG2Parameters": {
+                                            "Level": "Main",
+                                            "Profile": "Simple"
+                                        },
+                                        "Mode": "Frame",
+                                        "TrickPlay": false
+                                    },
+                                    "EncodingNode": "CPU",
+                                    "FrameRateParameters": {
+                                        "Denominator": 5,
+                                        "FrameRate": "50",
+                                        "Numerator": 25
+                                    },
+                                    "FrameSizeParameters": {
+                                        "Height": 1080,
+                                        "Resolution": "1920x1080",
+                                        "Width": 1440
+                                    },
+                                    "LogoInsertions": [
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "StillPicture": false,
+                                    "StillPictureDetection": {
+                                        "StillPictureBitrate": 500000,
+                                        "StillPictureDelay": 60,
+                                        "StillPictureDetectionMode": "None"
+                                    },
+                                    "StillPictureFilename": "blackout.png",
+                                    "VariantPid": 0,
+                                    "VideoSqueezeBack": {
+                                        "Enable": false
+                                    },
+                                    "Watermarking": {
+                                        "Apply": false,
+                                        "IrdetoSettings": {
+                                            "Banner": false,
+                                            "DirectID": 0,
+                                            "Mode": "A",
+                                            "Profile": "default"
+                                        }
+                                    }
+                                },
+                                {
+                                    "BFrameConfiguration": {
+                                        "EnableHierarchical": true,
+                                        "Max": 7,
+                                        "Min": 0
+                                    },
+                                    "DisplayAspectRatio": {
+                                        "AspectRatio": "16:9",
+                                        "Denominator": 9,
+                                        "Numerator": 16
+                                    },
+                                    "Encoding": {
+                                        "AVCParameters": {
+                                            "Descriptors": {
+                                                "AVCVideoDescriptor": true
+                                            },
+                                            "Entropy": "CABAC",
+                                            "Level": "Auto",
+                                            "Profile": "High"
+                                        },
+                                        "Bitrate": 4500000,
+                                        "Codec": "MPEG-4",
+                                        "ContentAdaptative": {
+                                            "CQRMode": "None"
+                                        },
+                                        "FieldOrder": "Top field first",
+                                        "FrameType": "Progressive",
+                                        "GopParameters": {
+                                            "Fixed": true,
+                                            "GopSize": 100
+                                        },
+                                        "HEVCParameters": {
+                                            "Level": "Auto",
+                                            "Profile": "Main"
+                                        },
+                                        "MPEG2Parameters": {
+                                            "Level": "Main",
+                                            "Profile": "Simple"
+                                        },
+                                        "Mode": "Frame",
+                                        "TrickPlay": false
+                                    },
+                                    "EncodingNode": "CPU",
+                                    "FrameRateParameters": {
+                                        "Denominator": 5,
+                                        "FrameRate": "50",
+                                        "Numerator": 25
+                                    },
+                                    "FrameSizeParameters": {
+                                        "Height": 1080,
+                                        "Resolution": "1920x1080",
+                                        "Width": 1440
+                                    },
+                                    "LogoInsertions": [
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        },
+                                        {
+                                            "AspectRatio": {
+                                                "AspectRatio": "Use original",
+                                                "Denominator": 9,
+                                                "Numerator": 16
+                                            },
+                                            "Enable": false,
+                                            "FileName": "name",
+                                            "Left": 0,
+                                            "LogoSizeReference": "Width",
+                                            "Size": 100,
+                                            "Speed": "1",
+                                            "Top": 0,
+                                            "Urls": [
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "StillPicture": false,
+                                    "StillPictureDetection": {
+                                        "StillPictureBitrate": 500000,
+                                        "StillPictureDelay": 60,
+                                        "StillPictureDetectionMode": "None"
+                                    },
+                                    "StillPictureFilename": "blackout.png",
+                                    "VariantPid": 0,
+                                    "VideoSqueezeBack": {
+                                        "Enable": false
+                                    },
+                                    "Watermarking": {
+                                        "Apply": false,
+                                        "IrdetoSettings": {
+                                            "Banner": false,
+                                            "DirectID": 0,
+                                            "Mode": "A",
+                                            "Profile": "default"
+                                        }
+                                    }
+                                }
+                            ],
+                            "VideoDelay": 0,
+                            "VideoFormat": "None",
+                            "Watermarking": "None",
+                            "WssBlanking": "Auto",
+                            "YUVFullRange": "None"
+                        }
+                    ]
+                },
+                "UID": "fa2a929a-c9fa-486a-b081-896fc62a6a77"
+            }
+        },
+        "GlobalConfiguration": {
+            "AudioSilenceParameters": {
+                "Enable": false,
+                "Threshold": -70
+            },
+            "DisableLogosOverSplices": false,
+            "EASConfiguration": "None",
+            "EASLocations": "",
+            "EnableAllFileOutputs": true,
+            "EnableBlackout": false,
+            "ForceEmulation": false,
+            "InputLossErrorRecoveryParameters": {
+                "Audio": "None",
+                "ETR": "Input Switch",
+                "InputSwitchMode": "Infinite loop",
+                "Video": "None"
+            },
+            "MuteOutputs": false,
+            "OverrideCoresEnabled": false,
+            "OverrideCoresValues": 10,
+            "OverrideMemoryValues": 8192
+        },
+        "Input": [
+            {
+                "ActiveInputIndex": 0,
+                "ChannelName": "",
+                "ETR101290": {
+                    "AutoSwitchBack": null,
+                    "ContinuityCountErrors": null,
+                    "PATErrors": {
+                        "MaximumInterval": 500
+                    },
+                    "PIDErrors": {
+                        "MaximumInterval": 500
+                    },
+                    "PMTErrors": {
+                        "MaximumInterval": 500
+                    },
+                    "SyncByteErrors": false,
+                    "TSSyncLossErrors": null
+                },
+                "InputStreamCharacteristics": {
+                    "Bitdepth": "8",
+                    "Bitrate": 5000000,
+                    "Codec": "MPEG-2",
+                    "FrameRateParameters": {
+                        "Denominator": 1,
+                        "FrameRate": "25",
+                        "Numerator": 25
+                    },
+                    "FrameSizeParameters": {
+                        "Height": 576,
+                        "Resolution": "720x576",
+                        "Width": 720
+                    },
+                    "FrameType": "Progressive"
+                },
+                "InputStreamCharacteristicsLegacy": {
+                    "Bitrate": 40000000,
+                    "Codec": "HEVC",
+                    "FrameRateParameters": {
+                        "Denominator": 1001,
+                        "FrameRate": "59.94",
+                        "Numerator": 6000
+                    },
+                    "FrameSizeParameters": {
+                        "Height": 1080,
+                        "Resolution": "1920x1080",
+                        "Width": 1920
+                    },
+                    "Mode": "Auto"
+                },
+                "Label": "Playout 2",
+                "Redundancy": "None",
+                "SCTE30Version": "SCTE30 2009",
+                "SplicerName": "",
+                "SplicerTolerance": 1,
+                "Splicing": false,
+                "SrtInputList": [
+                    {
+                        "ConnectTimeout": 3000,
+                        "EncryptionMode": "None",
+                        "Interface": "eth0",
+                        "Latency": 120,
+                        "LocalPort": 0,
+                        "Password": "TitanLive!",
+                        "Port": 6001,
+                        "Timeout": 1000,
+                        "Url": "srt://103.248.72.20:9800"
+                    }
+                ],
+                "SrtInputMode": "Caller",
+                "TSInputSmoothing": {
+                    "Enable": false,
+                    "InputSmoothingDelay": 0
+                },
+                "Type": "SRT"
+            }
+        ],
+        "IntelVCA": {
+            "Node": "Host"
+        },
+        "Logos": 1648565312.4708133,
+        "Mapping": {
+            "PidMappingList": [
+                {
+                    "AudioDecoder": [],
+                    "AudioInputTrack": [
+                        {
+                            "ID": 700,
+                            "InputId": 0
+                        }
+                    ],
+                    "DataInputTrack": [
+                        {
+                            "ID": 543,
+                            "InputId": 0
+                        }
+                    ],
+                    "VideoInputTrack": [
+                        {
+                            "ID": 500,
+                            "InputId": 0
+                        }
+                    ]
+                }
+            ],
+            "Programs": [],
+            "Type": "Pid"
+        },
+        "MultiInstancesSynchro": {
+            "Enable": false,
+            "IsMaster": false
+        },
+        "Name": "Fancode - Stream 4",
+        "Outputs": [
+            [
+                {
+                    "DirectoryCreation": false,
+                    "MergeMasterPlaylists": false,
+                    "Outputs": [
+                        {
+                            "BackupInterface": "eth0",
+                            "BaseUrl": "",
+                            "ChunkDuration": 10,
+                            "ConnectionTimeout": 0,
+                            "DRM": {
+                                "InternalKeyGeneration": {
+                                    "KeyUrl": "",
+                                    "PlaybackKeyUrl": ""
+                                }
+                            },
+                            "DisableFileChunking": false,
+                            "EnableBackupInterface": false,
+                            "EnableOutput": true,
+                            "FEC": false,
+                            "IPSpoofing": {
+                                "OverrideSourceAddress": false,
+                                "SourceAddress": "0.0.0.0"
+                            },
+                            "Interface": "eth0",
+                            "MasterPlaylists": [],
+                            "Mp4": false,
+                            "RecordingTriggerSource": "None",
+                            "SRT": {
+                                "ConnectTimeout": 3000,
+                                "Enable": false,
+                                "EncryptionMode": "None",
+                                "Latency": 120,
+                                "LocalPort": 0,
+                                "PacketDrop": true,
+                                "Password": "TitanLive!",
+                                "Timeout": 0
+                            },
+                            "SSLParameters": {
+                                "ClientCertificate": "certificate",
+                                "ExpectSpecificServerCertificate": false,
+                                "ExpectedServerCertificate": "certificate",
+                                "UseClientCertificate": false,
+                                "ValidateServerCertificate": false,
+                                "ValidationAuthority": "Default authority"
+                            },
+                            "StreamName": "",
+                            "TOS": 0,
+                            "TTL": 255,
+                            "Type": "Live",
+                            "Url": "https://p-ep2002932.i.akamaientrypoint.net/ateme/master.m3u8",
+                            "Zixi": false,
+                            "ZixiAdaptive": false,
+                            "ZixiChannelName": "",
+                            "ZixiEncryption": "None",
+                            "ZixiEncryptionKey": "",
+                            "ZixiFecOverhead": "Auto",
+                            "ZixiMaxLatency": 1000
+                        }
+                    ],
+                    "PlaylistsConfig": {
+                        "DashPlaylistsConfig": {
+                            "AdditionalAvailabilityOffset": 100,
+                            "DashProfile": "ISO Base media file format live profile",
+                            "DynamicAdInsertion": null,
+                            "InsertBaseURL": false,
+                            "ManifestUpdatePeriod": 3,
+                            "NothingBelowRepresentations": true,
+                            "UTCTiming": {
+                                "schemeIdUri": "None",
+                                "value": ""
+                            }
+                        },
+                        "HLSPlaylistsConfig": {
+                            "AddFrameRate": true,
+                            "MasterPlaylistUpdatePeriod": 3,
+                            "MediaPlaylistUseRelativeUrl": false,
+                            "ProgramDateTimeLocation": "Before first segment",
+                            "SCTE35ManifestDecoration": "Mode 5",
+                            "TagIFramePlaylist": false,
+                            "TagProgramDateTime": false,
+                            "TagVersion": true
+                        },
+                        "NumberOfSegmentsInPlaylist": 10
+                    },
+                    "Redundancy": {
+                        "ActiveOutputIndex": 0,
+                        "AutoSwitchBack": false,
+                        "AutoSwitchBackDelay": 1,
+                        "Mode": "Active/Active"
+                    },
+                    "SSL": {
+                        "IgnoreServerCertificateError": true
+                    },
+                    "SegmentAutoDelete": true,
+                    "TSPacketsPerIP": {
+                        "MaxNumber": "7"
+                    }
+                }
+            ]
+        ],
+        "State": {
+            "ActiveInputIndex": [
+                0,
+                0
+            ],
+            "ActiveOutputIndexes": [],
+            "AudioLevels": [],
+            "Blackout": false,
+            "EtrStatistics": [
+                {
+                    "ContinuityCountErrors": 0,
+                    "ContinuityCountFailover": 0,
+                    "PatMissingErrors": 0,
+                    "PidErrors": [
+                        {
+                            "errors": 0,
+                            "id": 500
+                        },
+                        {
+                            "errors": 0,
+                            "id": 543
+                        },
+                        {
+                            "errors": 0,
+                            "id": 700
+                        }
+                    ],
+                    "PmtMissingErrors": 0,
+                    "SyncByteLossErrors": 0,
+                    "TSSyncLossErrors": 1,
+                    "TotalContinuityCountErrors": 0
+                },
+                {
+                    "ContinuityCountErrors": 0,
+                    "ContinuityCountFailover": 0,
+                    "PatMissingErrors": 0,
+                    "PidErrors": [],
+                    "PmtMissingErrors": 0,
+                    "SyncByteLossErrors": 0,
+                    "TSSyncLossErrors": 1,
+                    "TotalContinuityCountErrors": 0
+                }
+            ],
+            "MainInputStatus": [
+                2,
+                2
+            ],
+            "MainOutputStatus": [
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "Messages": [],
+            "Recording": false,
+            "State": "Stopped",
+            "Statistics": {}
+        },
+        "Statmux": {
+            "AutoChannelId": true,
+            "Channel": 0,
+            "ChannelName": "",
+            "StatmuxName": "",
+            "StatmuxUID": ""
+        },
+        "TemplateParametersOverride": {},
+        
+        "_changed": true,
+        "Loads": null
+    }
+]
